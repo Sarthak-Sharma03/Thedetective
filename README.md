@@ -50,19 +50,19 @@ a) Frontend and Backend Informtation -
 3) Node.js is utilized to develop both the Frontend and Backend.
 4) Express.js is implemented to create a server for the Backend.
 5) Mongoose.js is utilized to facilitate communication between Node.js and MongoDB Atlas.
-EJS Template Engine is used to design Frontend files and import data from MongoDB Atlas into the project.
+6) EJS Template Engine is used to design Frontend files and import data from MongoDB Atlas into the project.
 
 
 b) Game Logic Information -
     
 1) Three.js technology was utilized to develop the game mechanics of the puzzle game.
-Controls for the game are established in the 'virtualjoystick.js' file and can be navigated using a mouse or trackpad.
-2) Multiple object images were incorporated into the game and stored in the 'items' folder.
-3) The game's CSS is defined within the 'game-style.css' file.
-4) The placement of object images throughout the game is determined by the logic contained in the 'items.js' file.
-Movement throughout the game's 3D-like panoramic environment is facilitated through the logic defined in the 'panoram.js' file.
-5) Soothing background music has been incorporated into the game.
-6) A timer in the form of an hourglass has been implemented, with a 3-minute countdown. Upon expiration, the game will conclude, and an alert will be displayed.
+2) Controls for the game are established in the 'virtualjoystick.js' file and can be navigated using a mouse or trackpad.
+3) Multiple object images were incorporated into the game and stored in the 'items' folder.
+4) The game's CSS is defined within the 'game-style.css' file.
+5) The placement of object images throughout the game is determined by the logic contained in the 'items.js' file.
+6) Movement throughout the game's 3D-like panoramic environment is facilitated through the logic defined in the 'panoram.js' file.
+7) Soothing background music has been incorporated into the game.
+8) A timer in the form of an hourglass has been implemented, with a 3-minute countdown. Upon expiration, the game will conclude, and an alert will be displayed.
     
     
 c) Game Scenery Information -
@@ -79,7 +79,7 @@ Steps  to run the project :-
 2) Install all the required packages and dependencies using the command: npm install
 3) Navigate to the src directory using the command: cd src
 4) To run the application, execute the command: node app.js
-5) The application is also available on Cyclic at the URL https://mystery-mansion.cyclic.app/.
+5) The application is also available on Cyclic at the URL: https://ill-gray-sawfish-sari.cyclic.app/
 
 
 Packages and Dependencies :-
@@ -109,13 +109,10 @@ The application's routes have been defined within the 'views' folder, nested wit
 
 Database Information :-
 
-For this application, MongoDB Atlas has been chosen as the online database to store the data. The MongoDB Atlas database used for this application is named 'Treasure_Hunt_Database' and it has two collections - 'users' and 'results'.
-
-The 'users' collection contains the email and password of the users who play the game, while the 'results' collection contains the name and scores of the users who play the game.
-
-The code for configuring the database is located in the 'db' folder of the application. This folder contains a file named 'conn.js' in which the connection between Node.js and MongoDB Atlas is defined using Mongoose.
-
-Additionally, there is a folder named 'models' inside the 'db' folder. This folder contains two files - 'userSchema.js' and 'resultSchema.js'. The former defines the schema for the 'users' collection while the latter defines the schema for the 'results' collection.
+1) For this application, MongoDB Atlas has been chosen as the online database to store the data. The MongoDB Atlas database used for this application is named 'test' and it has two collections - 'users' and 'results'.
+2) The 'users' collection contains the email and password of the users who play the game, while the 'results' collection contains the name and scores of the users who play the game.
+3) The code for configuring the database is located in the 'db' folder of the application. This folder contains a file named 'conn.js' in which the connection between Node.js and MongoDB Atlas is defined using Mongoose.
+4) Additionally, there is a folder named 'models' inside the 'db' folder. This folder contains two files - 'userSchema.js' and 'resultSchema.js'. The former defines the schema for the 'users' collection while the latter defines the schema for the 'results' collection.
 
 
 
