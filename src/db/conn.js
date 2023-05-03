@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+// const dotenv = require("dotenv");
 
-dotenv.config();
+// dotenv.config();
 
-const DB = process.env.DATABASE;
+// const DB = process.env.DATABASE;
+const DB="mongodb+srv://sarthak:sarthak@cluster0.8v9igjo.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.set("strictQuery" , true);
 
